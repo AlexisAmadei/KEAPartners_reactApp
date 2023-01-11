@@ -9,60 +9,36 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import AdbIcon from '@mui/icons-material/Adb';
+// import Avatar from '@mui/material/Avatar';
+// import Tooltip from '@mui/material/Tooltip';
+// import AdbIcon from '@mui/icons-material/Adb';
 
 import starButton from '../assets/Button-1.svg';
 import dashButton from '../assets/Button.svg';
 import bellButton from '../assets/Bell.svg';
+import Plus from '../assets/Plus.svg';
+import Export from '../assets/Export.svg';
 import ButtonHeader from './ButtonHeader';
 import "./Header.css"
 
 const pages = ['Dashboard', '/', 'Engagement'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="static">
       <Container maxWidth="xl" className='h-container'>
         <Toolbar disableGutters>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            DASHBOARD
-          </Typography> */}
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -99,27 +75,21 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <img src={dashButton} alt='button'></img>
-          <img src={starButton} alt='button'></img>
+          <img className="icon-head" src={dashButton} alt='button'></img>
+          <img className="icon-head" src={starButton} alt='button'></img>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-              key={page}
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: 'black', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
+            <a href='#' className='nav-item'>Dashboard</a>
+            <p className='nav-item'>/</p>
+            <a href='#' className='nav-item'>Engagement</a>
           </Box>
-          <img src={bellButton} alt='bell button'></img>
+          <img className='icon-head' src={bellButton} alt='bell button'></img>
           <ButtonHeader
             title="Nouvelle vue"
-            src="./assets/Plus.svg"
+            src={Plus}
           />
           <ButtonHeader
             title="Exporter"
-            src="./assets/Export.svg"
+            src={Export}
           />
         </Toolbar>
       </Container>
