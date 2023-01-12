@@ -1,5 +1,8 @@
-  .App {
+.App {
+  display: flex;
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -28,4 +31,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.right-sidebar {
+  height: 100%;
+  width: 10%;
+  background: rgb(173, 173, 173);
+  border-left: 1px solid #e8e8e8;
+}
+
+.left-sidebar {
+  height: 100%;
+  width: 15%;
+  background: rgb(173, 173, 173);
+  border-left: 1px solid #e8e8e8;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e8e8e8;
 }

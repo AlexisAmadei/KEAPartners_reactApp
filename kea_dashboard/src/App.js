@@ -1,13 +1,16 @@
 import './App.css';
 import Header from './components/Header';
-import PermanentDrawer from './components/PermanentDrawer';
-
 
 function App() {
   return (
     <div className="App">
-      {/* <PermanentDrawer /> */}
-      <Header />
+      <div className='left-sidebar'>
+      </div>
+      <div className='main'>
+        <Header />
+      </div>
+      <div className='right-sidebar'>
+      </div>
     </div>
   );
 }

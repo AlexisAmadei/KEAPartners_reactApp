@@ -20,12 +20,18 @@ import Plus from '../assets/Plus.svg';
 import Export from '../assets/Export.svg';
 import ButtonHeader from './ButtonHeader';
 import "./Header.css"
+import { shadows } from '@mui/system';
+
+const AppStyle={
+  backgroundColor: '#FFFFFF',
+  boxShadow: 'none',
+
+}
 
 const pages = ['Dashboard', '/', 'Engagement'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,7 +42,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar style={AppStyle} position="static">
       <Container maxWidth="xl" className='h-container'>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
