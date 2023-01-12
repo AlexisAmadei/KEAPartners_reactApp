@@ -41,10 +41,14 @@
 }
 
 .left-sidebar {
+  padding: 5px;
   height: 100%;
   width: 15%;
   background: rgb(173, 173, 173);
   border-left: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main {
@@ -52,5 +56,22 @@
   flex: 1;
   flex-direction: column;
   height: 100%;
+  padding: 5px;
   border: 1px solid #e8e8e8;
+}
+
+.nav {
+  margin-top: 20%;
+  text-align: left;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  margin: 50% 0 50% 0;
 }
