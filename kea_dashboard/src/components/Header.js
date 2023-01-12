@@ -20,7 +20,6 @@ import "./Header.css"
 const AppStyle={
   backgroundColor: '#FFFFFF',
   boxShadow: 'none',
-
 }
 
 const pages = ['Dashboard', '/', 'Engagement'];
