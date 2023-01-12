@@ -7,11 +7,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-// import Avatar from '@mui/material/Avatar';
-// import Tooltip from '@mui/material/Tooltip';
-// import AdbIcon from '@mui/icons-material/Adb';
 
 import starButton from '../assets/Button-1.svg';
 import dashButton from '../assets/Button.svg';
@@ -20,7 +16,6 @@ import Plus from '../assets/Plus.svg';
 import Export from '../assets/Export.svg';
 import ButtonHeader from './ButtonHeader';
 import "./Header.css"
-import { shadows } from '@mui/system';
 
 const AppStyle={
   backgroundColor: '#FFFFFF',
