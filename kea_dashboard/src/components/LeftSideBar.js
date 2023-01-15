@@ -12,7 +12,7 @@ export default function LeftSideBar() {
         <img src={LogoKEA} alt='LogoKEA' />
       </div>
       <div className='nav'>
-        <ul className='nav'>
+        <ul className='nav-list.'>
           <li className='sidebar-nav-item'>
             <img src={HomeIcon}></img>
             Dashboard</li>

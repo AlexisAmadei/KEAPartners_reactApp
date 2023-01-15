@@ -1,3 +1,6 @@
+.nav {
+    width: 80%;
+}
 
 .left-sidebar {
     padding: 5px;
@@ -25,6 +28,13 @@
     display: flex;
     margin: 30% 0 30% 0;
     align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar-nav-item:hover {
+    color: brown;
+    font-weight: bolder;
 }
 
 .sidebar-nav-item img {

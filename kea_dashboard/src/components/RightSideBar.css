@@ -27,4 +27,14 @@
     padding: 8px;
     gap: 8px;
     align-self: center;
+    transition: 0.3s;
+}
+
+.right-sidebar-footer__button:hover {
+    background-color: #000000;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1.1);
 }
