@@ -3,7 +3,6 @@ import './RightSideBar.css'
 import PlusIcon from '../assets/Plus.svg';
 import miniature from '../assets/miniature.jpg';
 import Eye from '../assets/red-eye.svg';
-import { margin } from '@mui/system';
 import Dropdown from './Dropdown';
 
 export default function RightSideBar() {
@@ -32,11 +31,10 @@ export default function RightSideBar() {
                 <button className='right-sidebar-footer__button1'>
                     <img src={Eye} alt="" /><p style={{ fontSize:"12px",margin:"0"}}>VUE COMPARATIVE</p>
                 </button>
-                <button className='right-sidebar-footer__button2'>
-                    <img src={PlusIcon} alt=""></img>
-                </button>
                 <Dropdown />
-
+                {/* <button className='right-sidebar-footer__button2'>
+                    <img src={PlusIcon} alt=""></img>
+                </button> */}
             </div>
         </div>
     )

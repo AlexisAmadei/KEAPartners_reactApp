@@ -1,25 +1,30 @@
-import React, { useState } from 'react';
+import { useState } from "react";
+import "./Dropdown.css";
+import PlusIcon from '../assets/Plus.svg';
+import CloseIcon from '../assets/CloseIcon.svg';
 
-function Dropdown() {
+const options = [
+  { value: 'Ajouter la vue entière', label: 'Option 1' },
+  { value: 'Ajouter un graphique', label: 'Option 2' },
+];
+
+export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  }
-
   return (
-    <div className="dropdown">
-      <button className="dropbtn" onClick={toggleDropdown}>
-        Dropdown
+    <div className="dropdown" >
+      <button className="dropdown__button"
+        onClick={() => setIsOpen(!isOpen)} >
+          <img src={PlusIcon} alt=""></img>
       </button>
-      {isOpen && (
-        <div className="dropdown-content-top">
-          <a href="#">Ajouter un graphique</a>
-          <a href="#">Ajouter la vue entière</a>
+        {isOpen && (
+        <div className="dropdown__content">
+          {options.map((option) => (
+            <div className="dropdown__option">
+              {option.value}
+            </div>
+          ))}
         </div>
       )}
     </div>
-  );
+  )
 }
-
-export default Dropdown;
