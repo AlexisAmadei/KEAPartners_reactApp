@@ -7,15 +7,14 @@
 
 .dropdown__button {
   width: 100%;
-  /* margin-top: 5px; */
+  align-self: center;
+  align-items: center;
   margin-bottom: 5px;
+  padding: 8px;
   background: #AF0929;
   border: none;
   border-radius: 8px;
-  align-items: center;
-  padding: 8px;
   gap: 8px;
-  align-self: center;
   top: 0;
   bottom: 100%;
   transition: .3s;
@@ -29,16 +28,30 @@
   transform: scale(1.1);
 }
 
+.active {
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .dropdown__content {
   width: 100%;
-  margin: 10px;
   font-size: 14px;
   border-color: #AF0929;
   border-radius: 8px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
+  border-style: solid solid none solid;
   border-width: 1px;
+}
+
+.dropdown__option {
+  color: #AF0929;
+  margin: 8% 0 8% 0;
+}
+
+.svg_rotate {
+  transition: all 0.2s ease;
 }

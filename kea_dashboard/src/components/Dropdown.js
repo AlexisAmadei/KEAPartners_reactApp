@@ -1,7 +1,7 @@
+import React from 'react';
 import { useState } from "react";
 import "./Dropdown.css";
 import PlusIcon from '../assets/Plus.svg';
-import CloseIcon from '../assets/CloseIcon.svg';
 
 const options = [
   { value: 'Ajouter la vue entière', label: 'Option 1' },
@@ -10,11 +10,30 @@ const options = [
 
 export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
+  const [rotation, setRotation] = useState(0);
+  const [active, setActive] = useState(false);
+
+  const rotate = () => {
+    setRotation(rotation + 45);
+  }
+
+  const activeDropdown = () => {
+    setActive(!active);
+  };
+
+  const handleOnClick = () => {
+    rotate();
+    activeDropdown();
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className="dropdown" >
-      <button className="dropdown__button"
-        onClick={() => setIsOpen(!isOpen)} >
-          <img src={PlusIcon} alt=""></img>
+      <button className={active ? "dropdown__button active" : "dropdown__button"}
+        onClick={() => handleOnClick() } >
+          <img className='svg_rotate' src={PlusIcon} alt=""
+            style={{ transform: `rotate(${rotation}deg)` }}>
+          </img>
       </button>
         {isOpen && (
         <div className="dropdown__content">
