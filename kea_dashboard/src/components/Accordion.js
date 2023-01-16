@@ -4,10 +4,10 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Dropdown from './Dropdown';
 
 export default function SimpleAccordion(props) {
   return (
-    <div>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -22,6 +22,5 @@ export default function SimpleAccordion(props) {
           </div>
         </AccordionDetails>
       </Accordion>
-    </div>
   );
 }

@@ -18,7 +18,37 @@
     margin-bottom: 5px;
 }
 
-.right-sidebar-footer__button {
+.right-sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-sidebar-footer__button1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    color: #AF0929;
+    background-color: white;
+    border: #AF0929 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 8px;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.right-sidebar-footer__button1:hover {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.right-sidebar-footer__button2 {
     width: 80%;
     border: none;
     background: #AF0929;
@@ -28,9 +58,11 @@
     gap: 8px;
     align-self: center;
     transition: 0.3s;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.right-sidebar-footer__button:hover {
+.right-sidebar-footer__button2:hover {
     background-color: #000000;
     color: white;
     padding: 8px;
@@ -38,3 +70,5 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/* dropdown test */
