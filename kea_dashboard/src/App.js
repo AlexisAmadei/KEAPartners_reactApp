@@ -5,7 +5,7 @@ import RightSideBar from './components/RightSideBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='root'>
       <LeftSideBar />
       <div className='main'>
         <Header />
