@@ -5,10 +5,6 @@
     min-width: none;
 }
 
-.icon-head {
-    margin: 10px;
-}
-
 .nav-item {
     margin: 5px;
     font-size: 16px;
@@ -31,4 +27,15 @@ a {
 
 .button-header__button img {
     margin: 0 5px 0 1px;
+}
+
+.icon-head {
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.icon-head:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(100deg);
 }
