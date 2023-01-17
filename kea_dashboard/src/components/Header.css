@@ -37,5 +37,4 @@ a {
 .icon-head:hover {
     cursor: pointer;
     transform: scale(1.1);
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(100deg);
 }
