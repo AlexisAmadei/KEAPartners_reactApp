@@ -1,0 +1,50 @@
+.main-app {
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+}
+
+.graph {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-graph {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.treemap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.right-graph {
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.break-line {
+    height: 80px;
+}
+
+.span-bold {
+    font-weight: bold;
+}

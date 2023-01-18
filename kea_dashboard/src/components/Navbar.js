@@ -1,24 +1,29 @@
-import "./Navbar.css"
+import { margin } from '@mui/system';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function Navbar() {
+import "./Navbar.scss"
+
+const Navbar = ({ current, setCurrent }) => {
+
     return (
-        <div className="nav-slider">
+        <div className={`nav-slider current-${current}`}>
             <nav>
-                <span className="marqueur"></span>
                 <ol>
-                    <li>
-                        <a className="lienmenu" href="#rubrique1">Mon Entreprise</a>
+                    <li onClick={(e) => setCurrent(0)}>
+                        <Link to={'/'}>Mon Entreprise</Link>
                     </li>
-                    <li>
-                        <a className="lienmenu" href="#rubrique2">Kea Objectifs</a>
+                    <li onClick={(e) => setCurrent(1)}>
+                        <Link to={'/objectifs'}>Kea Objectifs</Link>
                     </li>
-                    <li>
-                        <a className="lienmenu" href="#rubrique3"><span>Engagement</span></a>
+                    <li onClick={(e) => setCurrent(2)}>
+                        <Link to={'/objectifs'}>Engagement</Link>
                     </li>
                 </ol>
+                <span className="slider"></span>
             </nav>
         </div>
     );
-  }
-  
-  export default Navbar;
+}
+
+export default Navbar;

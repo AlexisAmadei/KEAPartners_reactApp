@@ -3,15 +3,15 @@
     align-items: center;
     width: 100%;
     margin-top: 15px;
-    position: relative;
+    // position: relative;
 }
 
 nav {
     width: 100%;
     position: relative;
     overflow: hidden;
-    border : 2px solid black;
-    border-radius: 7px;
+    border : 1px solid black;
+    border-radius: 8px;
     padding: 0;
     margin: 0;
 }
@@ -28,9 +28,9 @@ nav ol{
 nav ol li{
     width: 33.33333333333333333333333333333%;
     list-style: none;
-    position: relative; 
+    position: relative;
 }
-nav a{
+nav a {
     display: flex;
     width: 100%;
     align-items: center;
@@ -38,13 +38,16 @@ nav a{
     color: black;
 }
 
-.marqueur{
-    position: absolute;
-    background-color: red;
-    width: 33.33333333333333333%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: left 0.3s ease;
+@for $i from 0 through 2 {
+    .current-#{$i} {
+        li {
+            &:nth-child(#{$i}) {
+                background-color: #AF0929;
+                border-radius: 0 8px 8px 0;
+                margin: 0;
+                padding: 0;
+                color: white;
+            }
+        }
+    }
 }
-

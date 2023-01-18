@@ -1,18 +1,16 @@
 import './App.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import LeftSideBar from './components/LeftSideBar';
-import RightSideBar from './components/RightSideBar';
+import React, {useState} from 'react';
+import { Route, Routes } from 'react-router';
+import Accueil from './pages/Accueil';
+import Objectifs from './pages/Objectifs';
 
 function App() {
   return (
     <div className="App" id='root'>
-      <LeftSideBar />
-      <div className='main'>
-        <Header />
-        <Navbar />
-      </div>
-      <RightSideBar />
+      <Routes>
+        <Route exact path='/' element={<Accueil />} />
+        <Route path='/objectifs' element={<Objectifs />} />
+      </Routes>
     </div>
   );
 }
