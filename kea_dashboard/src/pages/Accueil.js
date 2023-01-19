@@ -9,13 +9,13 @@ import Compteurs from '../components/graph/Compteurs';
 import './accueil.css';
 
  const Accueil=({}) => {
-    const [current, setCurrent] = useState(0);
+    // const [current, setCurrent] = useState(0);
     return(
         <div className='main-app'>
             <LeftSideBar />
                 <div className='main'>
                     <Header />
-                    <Navbar current={0} setCurrent={setCurrent} />
+                    <Navbar />
                     <div className='graph'>
                         <div className='left-graph'>
                             <div className='break-line'>
