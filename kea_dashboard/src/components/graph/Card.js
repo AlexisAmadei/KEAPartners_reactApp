@@ -1,8 +1,6 @@
 import React from 'react'
 import './Card.css'
 
-
-
 export default function CompteursCard(props) {
     return (
         <div className='card'>
