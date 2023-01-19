@@ -41,6 +41,17 @@
     margin-left: 10px;
 }
 
+.containerLine-chart {
+    height: 100%;
+    width: 100%;
+}
+
+.line-chart {
+    height: 100%;
+    width: 100%;
+    max-height: 320px;
+}
+
 .break-line {
     height: 80px;
 }
