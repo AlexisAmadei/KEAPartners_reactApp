@@ -3,13 +3,12 @@ import Navbar from '../components/Navbar';
 import LeftSideBar from '../components/LeftSideBar';
 import RightSideBar from '../components/RightSideBar';
 import Treemap from '../assets/graph/treemap.svg';
-import React, { useState } from 'react';
+import React from 'react';
 import Compteurs from '../components/graph/Compteurs';
 
 import './accueil.css';
 
- const Accueil=({}) => {
-    // const [current, setCurrent] = useState(0);
+export default function Accueil() {
     return(
         <div className='main-app'>
             <LeftSideBar />
@@ -40,4 +39,3 @@ import './accueil.css';
     )
 
 }
-export default Accueil;

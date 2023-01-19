@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import "./Navbar.scss"
 
-const Navbar = ({}) => {
+export default function Navbar() {
 
     return (
         <div className="nav-slider">
@@ -18,5 +18,3 @@ const Navbar = ({}) => {
         </div>
     );
 }
-
-export default Navbar;
