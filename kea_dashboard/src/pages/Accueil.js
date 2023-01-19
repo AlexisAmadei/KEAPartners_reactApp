@@ -6,6 +6,7 @@ import Layout from '../Layout';
 import Treemap from '../assets/graph/treemap.svg';
 import React, { useState } from 'react';
 import Compteurs from '../components/graph/Compteurs';
+import Arrow from '../assets/arrow-up.svg';
 
 import './accueil.css';
 
