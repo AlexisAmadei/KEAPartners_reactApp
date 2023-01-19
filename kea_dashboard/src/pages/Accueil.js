@@ -2,11 +2,9 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import LeftSideBar from '../components/LeftSideBar';
 import RightSideBar from '../components/RightSideBar';
-import Layout from '../Layout';
 import Treemap from '../assets/graph/treemap.svg';
 import React, { useState } from 'react';
 import Compteurs from '../components/graph/Compteurs';
-import Arrow from '../assets/arrow-up.svg';
 
 import './accueil.css';
 
