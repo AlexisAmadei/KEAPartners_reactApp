@@ -3,28 +3,21 @@ import Navbar from '../components/Navbar';
 import LeftSideBar from '../components/LeftSideBar';
 import RightSideBar from '../components/RightSideBar';
 
-import Treemap from '../assets/graph/treemap.svg';
 import React, { useEffect, useState } from 'react';
+import Treemap from '../assets/graph/treemap.svg';
 import Compteurs from '../components/graph/Compteurs';
 
 import './accueil.css';
 import LineChart from '../components/graph/LineChart';
-import dataLineChart from '../data/linechart.json'
+import data from '../data/linechart.json'
 
-const Accueil=({}) => {
-    const [current, setCurrent] = useState(0);
-    const [data, setData] = useState(dataLineChart);
-
-    useEffect(() => {
-        setData(data);
-
-    }, []);
+export default function Accueil() {
     return(
         <div className='main-app'>
             <LeftSideBar />
                 <div className='main'>
                     <Header />
-                    <Navbar current={0} setCurrent={setCurrent} />
+                    <Navbar />
                     <div className='graph'>
                         <div className='left-graph'>
                             <div className='break-line'>
@@ -55,5 +48,3 @@ const Accueil=({}) => {
         </div>
     )
 }
-
-export default Accueil;

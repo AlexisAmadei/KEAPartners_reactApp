@@ -15,6 +15,11 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/objectifs' element={<Objectifs />} />
+        <Route path='/engagement' element={
+          <div>
+            <h1>Engagement</h1>
+          </div>
+        } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

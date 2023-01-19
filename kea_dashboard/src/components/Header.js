@@ -16,6 +16,7 @@ import Plus from '../assets/Plus.svg';
 import Export from '../assets/Export.svg';
 import ButtonHeader from './ButtonHeader';
 import "./Header.css"
+import { Link } from 'react-router-dom';
 
 const AppStyle={
   backgroundColor: '#FFFFFF',
@@ -26,15 +27,12 @@ const pages = ['Dashboard', '/', 'Engagement'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
   return (
     <AppBar style={AppStyle} position="static">
       <Container maxWidth="xl" className='h-container'>
@@ -78,9 +76,9 @@ function ResponsiveAppBar() {
           <img className="icon-head" src={dashButton} alt='button'></img>
           <img className="icon-head" src={starButton} alt='button'></img>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <a href='#' className='nav-item'>Dashboard</a>
+            <Link to='/' className='nav-item'>Dashboard</Link>
             <p className='nav-item' style={{opacity:"20%"}}>/</p>
-            <a href='#' className='nav-item'>Engagement</a>
+            <Link to='/engagement' className='nav-item'>Engagement</Link>
           </Box>
           <img className='icon-head' src={bellButton} alt='bell button'></img>
           <ButtonHeader
