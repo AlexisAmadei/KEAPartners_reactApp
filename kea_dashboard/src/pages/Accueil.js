@@ -1,15 +1,15 @@
+import React, { useEffect, useState } from 'react';
+
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import LeftSideBar from '../components/LeftSideBar';
 import RightSideBar from '../components/RightSideBar';
-
-import React, { useEffect, useState } from 'react';
-import Treemap from '../assets/graph/treemap.svg';
+import LineChart from '../components/graph/LineChart';
 import Compteurs from '../components/graph/Compteurs';
 
 import './accueil.css';
-import LineChart from '../components/graph/LineChart';
 import data from '../data/linechart.json'
+import Treemap from '../assets/graph/treemap.svg';
 
 export default function Accueil() {
     return(
