@@ -1,7 +1,9 @@
 .card-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
+
 .card-body{
     display: flex;
     justify-content: space-between;

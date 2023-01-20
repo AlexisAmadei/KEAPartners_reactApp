@@ -15,11 +15,12 @@ export default function LeftSideBar() {
         <ul className='nav-list.'>
           <li className='sidebar-nav-item'>
             <img src={HomeIcon} alt=""></img>
-            Dashboard</li>
+            Dashboard
+          </li>
           <li className='sidebar-nav-item'><img src={EyeIcon} alt=""></img>Vues partagées</li>
           <li className='sidebar-nav-item'>
             <img src={Setting} alt=""></img>
-            Paramêtres</li>
+            Paramètres</li>
         </ul>
       </div>
     </div>

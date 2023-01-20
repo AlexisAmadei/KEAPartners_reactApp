@@ -2,7 +2,6 @@ import { ResponsiveLine } from '@nivo/line'
 import React from 'react'
 
 const LineChart = ({ data }) => {
-    console.log(data);
     return (
     <ResponsiveLine
         data={data}
@@ -50,11 +49,11 @@ const LineChart = ({ data }) => {
                 anchor: 'top-left',
                 direction: 'row',
                 justify: false,
-                translateX: 100,
-                translateY: 0,
+                translateX: 0,
+                translateY: -25,
                 itemsSpacing: 0,
                 itemDirection: 'left-to-right',
-                itemWidth: 80,
+                itemWidth: 150,
                 itemHeight: 20,
                 itemOpacity: 0.75,
                 symbolSize: 12,

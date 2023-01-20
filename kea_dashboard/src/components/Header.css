@@ -1,7 +1,7 @@
 .h-container {
     background-color: white;
     color: black;
-    border-bottom: 1px solid #e8e8e8;
+    /* border-bottom: 1px solid #e8e8e8; */
     min-width: none;
 }
 
@@ -9,11 +9,6 @@
     margin: 5px;
     font-size: 16px;
     transition: 0.3s;
-}
-
-.nav-item:hover {
-    color: brown;
-    font-weight: bolder;
 }
 
 a {

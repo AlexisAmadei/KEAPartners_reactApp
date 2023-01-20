@@ -4,11 +4,13 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Dropdown from './Dropdown';
 
 export default function SimpleAccordion(props) {
+  const AccorStyle= {
+    boxShadow: 'none',
+  }
   return (
-      <Accordion>
+      <Accordion style={AccorStyle}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
