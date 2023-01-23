@@ -15,7 +15,7 @@ import Treemap from '../assets/graph/treemap.svg';
 export default function Accueil() {
     return(
         <div className='main-app'>
-            <LeftSideBar className="LeftSideBar" />
+            {/* <LeftSideBar className="LeftSideBar" /> */}
             <div className='main'>
                 <Header />
                 <Navbar />
@@ -48,7 +48,7 @@ export default function Accueil() {
                     </div>
                 </div>
             </div>
-            <RightSideBar />
+            {/* <RightSideBar /> */}
         </div>
     )
 }
