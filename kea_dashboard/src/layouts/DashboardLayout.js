@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomeLayout from './HomeLayout';
 import Accueil from '../pages/Accueil';
 import Objectifs from '../pages/Objectifs';
+import Engagements from '../pages/Engagements';
 
 export default function DashboardLayout() {
     return (
@@ -15,7 +16,8 @@ export default function DashboardLayout() {
                 <Routes>
                     <Route element={<HomeLayout />}>
                         <Route path='/' element={<Accueil />} />
-                        <Route path='objectifs' element={<Objectifs />} />
+                        <Route path='/objectifs' element={<Objectifs />} />
+                        <Route path='/engagements' element={<Accueil />} />
                     </Route>
                 </Routes>
             </div>

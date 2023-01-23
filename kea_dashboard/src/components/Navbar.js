@@ -11,7 +11,7 @@ export default function Navbar() {
                 <ol>
                     <li><Link to={'/'}>Mon Entreprise</Link></li>
                     <li><Link to={'/objectifs'}>Kea Objectifs</Link></li>
-                    <li><Link to={'/objectifs'}>Engagement</Link></li>
+                    <li><Link to={'/engagements'}>Engagement</Link></li>
                 </ol>
                 <span className="slider"></span>
             </nav>
