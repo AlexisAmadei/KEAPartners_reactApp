@@ -22,8 +22,11 @@ export default function LeftSideBar() {
           </li>
           <li className='sidebar-nav-item'><img src={EyeIcon} alt=""></img>Vues partagées</li>
           <li className='sidebar-nav-item'>
-            <img src={Setting} alt=""></img>
-            Paramètres</li>
+            <Link to='/settings' className='nav-item-link'>
+              <img src={Setting} alt=""></img>
+              Paramètres
+            </Link>
+            </li>
         </ul>
       </div>
     </div>
