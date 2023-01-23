@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 // import App from './App';
 import Objectifs from './pages/Objectifs';
-import AppLayout from './layouts/AppLayout';
+import DashboardLayout from './layouts/DashboardLayout';
 import Accueil from './pages/Accueil';
 
 const rootElement = document.getElementById('root');
@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<AppLayout />} >
+        <Route path='/' element={<DashboardLayout />} >
           <Route path='/' element={<Accueil />} />
           <Route path='/objectifs' element={<Objectifs />} />
           <Route path='/engagement' element={
