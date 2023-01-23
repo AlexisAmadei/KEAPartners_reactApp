@@ -3,9 +3,10 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import App from './App';
+// import App from './App';
 import Objectifs from './pages/Objectifs';
 import AppLayout from './layouts/AppLayout';
+import Accueil from './pages/Accueil';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -15,7 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<AppLayout />} >
-          <Route path='/' element={<App />} />
+          <Route path='/' element={<Accueil />} />
           <Route path='/objectifs' element={<Objectifs />} />
           <Route path='/engagement' element={
             <div>

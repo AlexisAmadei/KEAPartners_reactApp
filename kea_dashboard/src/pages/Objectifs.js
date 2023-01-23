@@ -10,12 +10,7 @@ export default function Objectifs() {
     const [current, setCurrent] = useState(1);
     return (
         <div className="main-objectifs">
-            <LeftSideBar />
-            <div className="main">
-                <Header />
-                <Navbar current={1} setCurrent={setCurrent}/>
-            </div>
-            <RightSideBar />
+           <p>oibjectif</p>
         </div>
     );
 }
