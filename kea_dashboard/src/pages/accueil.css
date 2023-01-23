@@ -1,6 +1,7 @@
 .graph {
     display: flex;
     flex-direction: row;
+    margin: 15px;
 }
 
 .left-graph {
@@ -36,6 +37,7 @@
     margin: 5px;
     border: 1px solid rgba(77, 77, 77, 0.3);
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 .line-chart {
