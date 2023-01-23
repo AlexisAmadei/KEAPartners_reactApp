@@ -4,6 +4,7 @@ import HomeIcon from '../assets/home.svg';
 import EyeIcon from '../assets/eye.svg';
 
 import './LeftSideBar.css';
+import { Link } from 'react-router-dom';
 
 export default function LeftSideBar() {
   return (
@@ -14,8 +15,10 @@ export default function LeftSideBar() {
       <div className='nav'>
         <ul className='nav-list.'>
           <li className='sidebar-nav-item'>
-            <img src={HomeIcon} alt=""></img>
-            Dashboard
+            <Link to='/' className='nav-item-link'>
+              <img src={HomeIcon} alt=""></img>
+              Dashboard
+            </Link>
           </li>
           <li className='sidebar-nav-item'><img src={EyeIcon} alt=""></img>Vues partagées</li>
           <li className='sidebar-nav-item'>

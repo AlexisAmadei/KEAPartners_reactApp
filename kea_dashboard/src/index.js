@@ -2,11 +2,11 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-// import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Objectifs from './pages/Objectifs';
-import AppLayout from './layouts/AppLayout';
+import DashboardLayout from './layouts/DashboardLayout';
 import Accueil from './pages/Accueil';
+import HomeLayout from './layouts/HomeLayout';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -15,15 +15,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<AppLayout />} >
-          <Route path='/' element={<Accueil />} />
-          <Route path='/objectifs' element={<Objectifs />} />
-          <Route path='/engagement' element={
-            <div>
-              <h1>Engagement</h1>
-            </div>
-          } />
-        </Route>
+        {/* settings */}
+        <Route path='/*' element={<DashboardLayout />} ></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
