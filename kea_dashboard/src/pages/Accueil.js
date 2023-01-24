@@ -8,6 +8,7 @@ import './accueil.css';
 import data from '../data/linechart.json'
 import Treemap from '../assets/graph/treemap.svg';
 import ControlledAccordion from '../components/ControlledAccordion';
+import FootAccordion from '../components/FootAccordion';
 
 export default function Accueil() {
     return (
@@ -41,7 +42,24 @@ export default function Accueil() {
                 </div>
             </div>
             <div className='foot-accordion'>
-                <ControlledAccordion />
+                <FootAccordion
+                    spname='BACULARD'
+                    spsurname='Herve'
+                    type='3'
+                    client='CFAO'
+                    projname='P-CFAO-Aftermarket...'
+                    secteur='Distribution'
+                    tribu='M&E'
+                />
+                <FootAccordion
+                    spname='TABORIN'
+                    spsurname='Bruno'
+                    type='3'
+                    client='Absolutely'
+                    projname='P-ALDI-...'
+                    secteur='Distribution'
+                    tribu='Inno'
+                />
             </div>
         </div>
     )

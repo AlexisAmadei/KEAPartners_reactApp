@@ -21,9 +21,10 @@ export default function ControlledAccordions() {
                     id="panel1bh-header"
                 >
                     <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                        General settings
+                        BACULARD Herve
                     </Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
+                    <Typography sx={{ color: 'text.secondary' }}>3</Typography>
+                    <Typography sx={{ color: 'text.secondary' }}>CFAO</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
