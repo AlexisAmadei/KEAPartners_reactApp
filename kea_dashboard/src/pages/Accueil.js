@@ -7,7 +7,6 @@ import ProgressBar from '../components/graph/progressBar';
 import './accueil.css';
 import data from '../data/linechart.json'
 import Treemap from '../assets/graph/treemap.svg';
-import ControlledAccordion from '../components/ControlledAccordion';
 import FootAccordion from '../components/FootAccordion';
 
 export default function Accueil() {

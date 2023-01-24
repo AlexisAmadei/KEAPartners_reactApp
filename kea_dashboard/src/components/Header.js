@@ -78,8 +78,8 @@ function ResponsiveAppBar() {
           <img className="icon-head" src={starButton} alt='button'></img>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Link to='/' className='nav-item'>Dashboard</Link>
-            <p className='nav-item' style={{opacity:"20%"}}>/</p>
-            <Link to='/engagement' className='nav-item'>Engagement</Link>
+            {/* <p className='nav-item' style={{opacity:"20%"}}>/</p> */}
+            <Link to='/engagements' className='nav-item'>Engagement</Link>
           </Box>
           <img className='icon-head' src={bellButton} alt='bell button'></img>
           <ButtonHeader

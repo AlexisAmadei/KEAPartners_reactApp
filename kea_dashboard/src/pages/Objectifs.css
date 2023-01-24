@@ -1,13 +1,40 @@
 .main-objectifs {
     display: flex;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
-/* 
-.main {
-    display: flex;
-    flex: 1;
     flex-direction: column;
-    padding: 10px;
-} */
+    justify-content: center;
+    margin: 14px;
+    gap: 24px;
+}
+
+.gauge-chart {
+    display: flex;
+    justify-content: center;
+    padding: 24px 24px 12px;
+    gap: 24px;
+    border: 1px solid #AF0929;
+    border-radius: 8px;
+}
+
+.gauge-chart p {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'hansom_fybold';
+}
+
+.gauge-chart img {
+    margin-top: 50px;
+}
+
+.obj-results span {
+    font-size: 30px;
+    font-family: 'hansom_fybold';
+}
+
+.obj-barChart {
+    height: 300px;
+    width: 100%;
+    background-color: #F7F9FB;
+    border: 1px solid rgba(77, 77, 77, 0.3);
+    border-radius: 8px;
+    width: 600px;
+}

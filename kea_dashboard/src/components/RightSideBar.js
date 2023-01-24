@@ -1,6 +1,5 @@
 import SimpleAccordion from './Accordion'
-import './RightSideBar.css'
-import PlusIcon from '../assets/Plus.svg';
+import './RightSideBar.css';
 import miniature from '../assets/miniature.jpg';
 import Eye from '../assets/red-eye.svg';
 import Dropdown from './Dropdown';
@@ -32,9 +31,6 @@ export default function RightSideBar() {
                     <img src={Eye} alt="" /><p style={{ fontSize:"12px",margin:"0"}}>VUE COMPARATIVE</p>
                 </button>
                 <Dropdown />
-                {/* <button className='right-sidebar-footer__button2'>
-                    <img src={PlusIcon} alt=""></img>
-                </button> */}
             </div>
         </div>
     )

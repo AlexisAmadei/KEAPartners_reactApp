@@ -15,6 +15,8 @@ export default function HomeLayout() {
             <Navbar />
             <Routes>
                 <Route path='/' element={<Accueil />} />
+                <Route path='/objectifs' element={<Objectifs />} />
+                <Route path='/engagements' element={<Engagements />} />
             </Routes>
         </div>
     )
