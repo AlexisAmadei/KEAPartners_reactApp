@@ -1,8 +1,7 @@
-import { ResponsiveBar } from '@nivo/bar'
 import React from 'react'
-import { red } from '@mui/material/colors'
+import { ResponsiveBar } from '@nivo/bar'
 
-const BarChart = ({ data /* see data tab */ }) => (
+const BarChart = ({ data }) => (
     <ResponsiveBar
         data={data}
         keys={[

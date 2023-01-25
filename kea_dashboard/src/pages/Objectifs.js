@@ -1,9 +1,11 @@
 import React from "react";
-import "./Objectifs.css";
-import data from '../data/barchart.json'
-import BarChart from '../components/graph/BarChart';
+
 import ProgressBar from "@ramonak/react-progress-bar";
+import BarChart from '../components/graph/BarChart';
+
+import data from '../data/barchart.json'
 import ObjGauge from '../assets/ObjGauge.svg';
+import "./Objectifs.css";
 
 export default function Objectifs() {
     return (
@@ -23,7 +25,7 @@ export default function Objectifs() {
                     <span>haha la dataviz</span>
                     <div className="container-progress-bar">
                         <h2>Fiches impact réalisées</h2>
-                        <div    >
+                        <div>
                             <ProgressBar
                                 completed={75}
                                 bgColor="#AF0929"

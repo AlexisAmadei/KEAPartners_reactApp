@@ -20,7 +20,7 @@ const ProgressLeft = () => {
                         bgColor="#AF0929"
                         baseBgColor="#e8e8e8"
                         isLabelVisible={false}
-                        height="13px"
+                        height="13px"   
                     />
                 </div>
                 <div className="progress-item">
