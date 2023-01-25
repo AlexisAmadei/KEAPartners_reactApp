@@ -31,6 +31,11 @@
     transition: 0.3s;
 }
 
+.sidebar-nav-item a {
+    display: flex;
+    align-items: end;
+}
+
 .sidebar-nav-item img {
     margin: 4px;
 }
