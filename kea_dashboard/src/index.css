@@ -20,6 +20,7 @@ html, body {
   width: 100vw;
   font-family: 'hansom_fyregular';
 }
+
 @font-face {
   font-family: 'hansom_fyregular';
   src: url('./fonts/hansomFY/hansomfy-regular_s-webfont.woff2') format('woff2'),

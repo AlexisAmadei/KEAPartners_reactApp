@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function LeftSideBar() {
   return (
     <div className='left-sidebar'>
-      <div style={{ marginTop: "10%"}}>
+      <div style={{ marginTop: "10%" }}>
         <img src={LogoKEA} alt='LogoKEA' />
       </div>
       <div className='nav'>

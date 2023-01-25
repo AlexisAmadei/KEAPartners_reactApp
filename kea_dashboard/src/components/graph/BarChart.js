@@ -1,20 +1,25 @@
 import { ResponsiveBar } from '@nivo/bar'
 import React from 'react'
 
-const BarChart = ({ data }) => (
+const BarChart = ({ data /* see data tab */ }) => (
     <ResponsiveBar
         data={data}
         keys={[
-            'realisé'
+            'hot dog',
+            'burger',
+            'sandwich',
+            'kebab',
+            'fries',
+            'donut'
         ]}
-        indexBy="tribu"
+        indexBy="country"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         minValue={0}
         maxValue={100}
         groupMode="grouped"
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
-        colors={ '#AF0929' }
+        colors={ 'burger': '#AF0929', 'sandwich': '#AF0929', 'kebab': '#AF0929', 'fries': '#AF0929', 'donut': '#AF0929}
         defs={[
             {
                 id: 'dots',
@@ -50,29 +55,23 @@ const BarChart = ({ data }) => (
             }
         ]}
         borderRadius={4}
-        borderColor={{
-            from: 'color',
-            modifiers: [
-                [
-                    'darker',
-                    1.6
-                ]
-            ]
-        }}
         axisTop={null}
         axisRight={null}
         axisBottom={{
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0
+            tickRotation: 0,
+            legend: 'country',
+            legendPosition: 'middle',
+            legendOffset: 32
         }}
         axisLeft={{
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0
-            // legend: 'food',
-            // legendPosition: 'middle',
-            // legendOffset: -40
+            tickRotation: 0,
+            legend: 'food',
+            legendPosition: 'middle',
+            legendOffset: -40
         }}
         enableLabel={false}
         labelSkipWidth={12}
@@ -112,7 +111,7 @@ const BarChart = ({ data }) => (
         ]}
         role="application"
         ariaLabel="Nivo bar chart demo"
-        barAriaLabel={function(e){return e.id+": "+e.formattedValue+" in country: "+e.indexValue}}
+        barAriaLabel={function (e) { return e.id + ": " + e.formattedValue + " in country: " + e.indexValue }}
     />
 )
 export default BarChart

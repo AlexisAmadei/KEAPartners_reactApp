@@ -2,7 +2,9 @@
     {
         "tribu": "Digitech",
         "hot dog": 35,
-        "hot dogColor": "hsl(348,90,36)"
+        "hot dogColor": "hsl(348,90,36)",
+        "burger": 80,
+        "burgerColor": "hsl(348,90,36)"
     },
     {
         "tribu": "Inno",
