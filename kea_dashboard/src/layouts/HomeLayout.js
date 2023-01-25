@@ -7,8 +7,6 @@ import Accueil from '../pages/Accueil';
 import Objectifs from '../pages/Objectifs';
 import Engagements from '../pages/Engagements';
 
-import './HomeLayout.css';
-
 export default function HomeLayout() {
     return (
         <div className="home-main-app">

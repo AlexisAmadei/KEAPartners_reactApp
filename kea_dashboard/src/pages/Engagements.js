@@ -7,8 +7,8 @@ export default function Engagements() {
     return (
         <div>
             <h1>Mes Fiches impacts</h1>
-            <img className="img" src={todolist}></img>
-            <img className="img" src={ranked}></img>
+            <img className="img" src={todolist} alt="dataviz"></img>
+            <img className="img" src={ranked} alt="dataviz"></img>
         </div>
     );
 }
