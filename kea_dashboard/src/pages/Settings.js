@@ -1,7 +1,9 @@
 import React from "react";
-import Switch from '@mui/material/Switch';
-import './Settings.css';
 import { Link } from "react-router-dom";
+
+import Switch from '@mui/material/Switch';
+
+import './Settings.css';
 
 export default function Settings() {
     return (
@@ -17,16 +19,16 @@ export default function Settings() {
                 <div className="switch-item">
                     <p>Autoriser les notifications</p>
                     <Switch />
-                </div>   
-                <div className="switch-item">    
+                </div>
+                <div className="switch-item">
                     <p>Sauvegarder automatiquement les modifications</p>
                     <Switch />
                 </div>
-                <div className="switch-item">     
+                <div className="switch-item">
                     <p>Mode avion</p>
                     <Switch />
                 </div>
-                <div className="switch-item">     
+                <div className="switch-item">
                     <p>Activer la localisation</p>
                     <Switch />
                 </div>

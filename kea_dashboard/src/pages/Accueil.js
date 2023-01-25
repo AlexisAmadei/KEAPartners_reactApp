@@ -3,11 +3,11 @@ import React from 'react';
 import LineChart from '../components/graph/LineChart';
 import Compteurs from '../components/graph/Compteurs';
 import ProgressBar from '../components/graph/progressBar';
-
-import './accueil.css';
-import data from '../data/linechart.json'
-import Treemap from '../assets/graph/treemap.svg';
 import FootAccordion from '../components/FootAccordion';
+
+import Treemap from '../assets/graph/treemap.svg';
+import data from '../data/linechart.json'
+import './accueil.css';
 
 export default function Accueil() {
     return (

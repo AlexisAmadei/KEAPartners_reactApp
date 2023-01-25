@@ -1,4 +1,5 @@
 import React from "react";
+
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import "./progressBar.css";
@@ -7,7 +8,7 @@ const ProgressLeft = () => {
     return (
         <div className="main-progress">
             <div className="progress-title">
-                <h2 style={{ fontSize:'16px' }}>Classement des secteurs en fonction du nombre de cases activée - 377 au total</h2>
+                <h2 style={{ fontSize: '16px' }}>Classement des secteurs en fonction du nombre de cases activée - 377 au total</h2>
             </div>
             <div className="progress-chart">
                 <div className="progress-item">
@@ -20,7 +21,7 @@ const ProgressLeft = () => {
                         bgColor="#AF0929"
                         baseBgColor="#e8e8e8"
                         isLabelVisible={false}
-                        height="13px"   
+                        height="13px"
                     />
                 </div>
                 <div className="progress-item">
@@ -110,6 +111,5 @@ const ProgressLeft = () => {
             </div>
         </div>
     );
-}
-
+};
 export default ProgressLeft;

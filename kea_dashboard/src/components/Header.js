@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -17,16 +18,15 @@ import Plus from '../assets/Plus.svg';
 import Export from '../assets/Export.svg';
 import ButtonHeader from './ButtonHeader';
 import "./Header.css"
-import { Link } from 'react-router-dom';
 
-const AppStyle={
+const AppStyle = {
   backgroundColor: '#FFFFFF',
   boxShadow: 'none',
 }
 
 const pages = ['Dashboard', '/', 'Engagement'];
 
-function ResponsiveAppBar() {
+export default function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-            <MenuIcon />
+              <MenuIcon />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -95,4 +95,3 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;

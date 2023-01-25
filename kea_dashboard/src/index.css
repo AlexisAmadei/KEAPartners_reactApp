@@ -9,11 +9,6 @@ body {
   width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 html, body {
   box-sizing: border-box;
   height: 100vh;
@@ -21,10 +16,19 @@ html, body {
   font-family: 'hansom_fyregular';
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.img {
+  width: 100%;
+}
+
 @font-face {
   font-family: 'hansom_fyregular';
   src: url('./fonts/hansomFY/hansomfy-regular_s-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-regular_s-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-regular_s-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -33,7 +37,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fyregular';
   src: url('./fonts/hansomFY/hansomfy-regular-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-regular-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -42,7 +46,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fylight_italic';
   src: url('./fonts/hansomFY/hansomfy-lightitalic-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-lightitalic-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-lightitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -51,7 +55,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fylight_italic';
   src: url('./fonts/hansomFY/hansomfy-lightitalic_s-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-lightitalic_s-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-lightitalic_s-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -60,7 +64,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fybold';
   src: url('./fonts/hansomFY/hansomfy-bold-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-bold-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -68,7 +72,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fybold';
   src: url('./fonts/hansomFY/hansomfy-bold_s-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-bold_s-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-bold_s-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -77,7 +81,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fybold_italic';
   src: url('./fonts/hansomFY/hansomfy-bolditalic-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-bolditalic-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-bolditalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -86,7 +90,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fybold_italic';
   src: url('./fonts/hansomFY/hansomfy-bolditalic_s-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-bolditalic_s-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-bolditalic_s-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -95,7 +99,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fyitalic';
   src: url('./fonts/hansomFY/hansomfy-italic-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-italic-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -104,7 +108,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fyitalic';
   src: url('./fonts/hansomFY/hansomfy-italic_s-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-italic_s-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-italic_s-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -113,7 +117,7 @@ html, body {
 @font-face {
   font-family: 'hansom_fylight';
   src: url('./fonts/hansomFY/hansomfy-light-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-light-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -122,12 +126,8 @@ html, body {
 @font-face {
   font-family: 'hansom_fylight';
   src: url('./fonts/hansomFY/hansomfy-light_s-webfont.woff2') format('woff2'),
-       url('./fonts/hansomFY/hansomfy-light_s-webfont.woff') format('woff');
+    url('./fonts/hansomFY/hansomfy-light_s-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
-}
-
-.img {
-  width: 100%;
 }

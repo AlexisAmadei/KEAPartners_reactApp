@@ -19,9 +19,11 @@
     width: 25%;
     height: min-content;
 }
+
 .card-title{
     margin-bottom: 10px;
 }
+
 .card-container .card-title {
     text-align: center;
 }

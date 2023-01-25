@@ -1,8 +1,11 @@
+import React from 'react'
+
 import SimpleAccordion from './Accordion'
-import './RightSideBar.css';
+import Dropdown from './Dropdown';
 import miniature from '../assets/miniature.jpg';
 import Eye from '../assets/red-eye.svg';
-import Dropdown from './Dropdown';
+
+import './RightSideBar.css';
 
 export default function RightSideBar() {
     return (
@@ -28,7 +31,7 @@ export default function RightSideBar() {
             </div>
             <div className='right-sidebar-footer'>
                 <button className='right-sidebar-footer__button1'>
-                    <img src={Eye} alt="" /><p style={{ fontSize:"12px",margin:"0"}}>VUE COMPARATIVE</p>
+                    <img src={Eye} alt="" /><p style={{ fontSize: "12px", margin: "0" }}>VUE COMPARATIVE</p>
                 </button>
                 <Dropdown />
             </div>

@@ -1,10 +1,12 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 import LogoKEA from '../assets/LogoKEA.png';
 import Setting from '../assets/settings.svg';
 import HomeIcon from '../assets/home.svg';
 import EyeIcon from '../assets/eye.svg';
 
 import './LeftSideBar.css';
-import { Link } from 'react-router-dom';
 
 export default function LeftSideBar() {
   return (
@@ -26,7 +28,7 @@ export default function LeftSideBar() {
               <img src={Setting} alt=""></img>
               Paramètres
             </Link>
-            </li>
+          </li>
         </ul>
       </div>
     </div>

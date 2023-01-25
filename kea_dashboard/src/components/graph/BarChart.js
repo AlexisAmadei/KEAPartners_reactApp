@@ -43,25 +43,19 @@ const BarChart = ({ data }) => (
         axisBottom={{
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0,
-            // legend: 'country',
-            // legendPosition: 'middle',
-            // legendOffset: 32
+            tickRotation: 0
         }}
         axisLeft={{
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0,
-            // legend: 'food',
-            // legendPosition: 'middle',
-            // legendOffset: -40
+            tickRotation: 0
         }}
         enableLabel={false}
         labelSkipWidth={12}
         labelSkipHeight={12}
         role="application"
-        ariaLabel="Nivo bar chart demo"
-        barAriaLabel={function (e) { return e.id + ": " + e.formattedValue + " in country: " + e.indexValue }}
+        ariaLabel="KEA bar chart"
+        barAriaLabel={function (e) { return e.id + ": " + e.formattedValue + " in tribu: " + e.indexValue }}
     />
 )
 export default BarChart

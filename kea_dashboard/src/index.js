@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import DashboardLayout from './layouts/DashboardLayout';
-import './index.css';
 import Settings from './pages/Settings';
+
+import './index.css';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);

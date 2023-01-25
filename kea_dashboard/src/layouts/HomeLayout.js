@@ -1,12 +1,13 @@
 import React from 'react';
-import { Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
-import './HomeLayout.css';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Accueil from '../pages/Accueil';
 import Objectifs from '../pages/Objectifs';
 import Engagements from '../pages/Engagements';
+
+import './HomeLayout.css';
 
 export default function HomeLayout() {
     return (

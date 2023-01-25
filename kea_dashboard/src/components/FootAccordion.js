@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./FootAccordion.css"
 import AccorGreen from "../assets/accor-green.svg";
 import ChevronDown from "../assets/chevron-down.svg";
