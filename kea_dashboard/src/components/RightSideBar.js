@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SimpleAccordion from './Accordion'
+import SimpleAccordion from './SimpleAccordion'
 import Dropdown from './Dropdown';
 import miniature from '../assets/miniature.jpg';
 import Eye from '../assets/red-eye.svg';

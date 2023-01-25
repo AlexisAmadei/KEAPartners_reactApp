@@ -26,7 +26,7 @@ const AppStyle = {
 
 const pages = ['Dashboard', '/', 'Engagement'];
 
-export default function ResponsiveAppBar() {
+export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
