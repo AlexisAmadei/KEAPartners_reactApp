@@ -45,6 +45,10 @@
   border-bottom-left-radius: 0;
   border-style: solid solid none solid;
   border-width: 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
 }
 
 .dropdown__option {
