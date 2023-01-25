@@ -14,6 +14,22 @@ export default function Settings() {
                     <p>Changer le thème</p>
                     <Switch />
                 </div>
+                <div className="switch-item">
+                    <p>Autoriser les notifications</p>
+                    <Switch />
+                </div>   
+                <div className="switch-item">    
+                    <p>Sauvegarder automatiquement les modifications</p>
+                    <Switch />
+                </div>
+                <div className="switch-item">     
+                    <p>Mode avion</p>
+                    <Switch />
+                </div>
+                <div className="switch-item">     
+                    <p>Activer la localisation</p>
+                    <Switch />
+                </div>
             </div>
             <div className="back-home">
                 <Link to='/'>Retour à l'accueil</Link>
