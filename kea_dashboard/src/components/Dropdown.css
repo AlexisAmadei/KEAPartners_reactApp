@@ -53,7 +53,13 @@
 
 .dropdown__option {
   color: #AF0929;
+  font-size: 18px;
   margin: 8% 0 8% 0;
+}
+
+.dropdown__option:hover {
+  color: #000000;
+  cursor: pointer;
 }
 
 .svg_rotate {
