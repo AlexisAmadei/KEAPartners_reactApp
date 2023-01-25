@@ -6,6 +6,8 @@ import BarChart from '../components/graph/BarChart';
 import data from '../data/barchart.json'
 import ObjGauge from '../assets/ObjGauge.svg';
 import Mood from '../assets/Mood.svg';
+import Fidel from '../assets/Fidel.svg';
+import FootGraph from '../assets/FootGraph.svg';
 import "./Objectifs.css";
 
 export default function Objectifs() {
@@ -36,13 +38,17 @@ export default function Objectifs() {
                             />
                         </div>
                     </div>
-                    <div className="container-mood">
-                        <div className="mood-face">
-                            <img src={Mood} alt="mood" />
+                    <div className="container-mood-fidel">
+                        <div className="container-mood">
+                            <div className="mood-face">
+                                <img src={Mood} alt="mood" />
+                            </div>
                         </div>
+                        <img src={Fidel}></img>
                     </div>
                 </div>
             </div>
+            <img id="foot-graph" src={FootGraph} alt="foot-graph" />
         </div>
     );
 }
