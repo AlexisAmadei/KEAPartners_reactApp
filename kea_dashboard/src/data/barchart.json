@@ -1,33 +1,26 @@
 [
     {
         "tribu": "Digitech",
-        "hot dog": 35,
-        "hot dogColor": "hsl(348,90,36)",
-        "burger": 80,
-        "burgerColor": "hsl(348,90,36)"
+        "value": 60
     },
     {
         "tribu": "Inno",
-        "hot dog": 126,
-        "hot dogColor": "hsl(348,90,36)"
+        "value": 87
     },
     {
         "tribu": "ITR",
-        "hot dog": 54,
-        "hot dogColor": "hsl(348,90,36)"
+        "value": 80
     },
     {
         "tribu": "M&E",
-        "hot dog": 29,
-        "hot dogColor": "hsl(348,90,36)"
+        "value": 85
     },
     {
         "tribu": "Services",
-        "hot dog": 163,
-        "hot dogColor": "hsl(348,90,36)"
+        "value": 75
     },
     {
         "tribu": "PI",
-        "hot dog": 78
+        "value": 86
     }
 ]

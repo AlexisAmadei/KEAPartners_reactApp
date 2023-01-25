@@ -13,4 +13,5 @@
     flex-direction: column;
     overflow: scroll;
     max-height: 100%;
+    max-width: 100%;
 }
