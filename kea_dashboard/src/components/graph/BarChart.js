@@ -1,5 +1,6 @@
 import { ResponsiveBar } from '@nivo/bar'
 import React from 'react'
+import { red } from '@mui/material/colors'
 
 const BarChart = ({ data /* see data tab */ }) => (
     <ResponsiveBar
@@ -19,7 +20,8 @@ const BarChart = ({ data /* see data tab */ }) => (
         groupMode="grouped"
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
-        colors={ 'burger': '#AF0929', 'sandwich': '#AF0929', 'kebab': '#AF0929', 'fries': '#AF0929', 'donut': '#AF0929}
+        colors={['#AF0929']}
+        colorBy="index"
         defs={[
             {
                 id: 'dots',
