@@ -16,7 +16,7 @@ const BarChart = ({ data }) => (
         indexScale={{ type: 'band', round: true }}
         colors={['#AF0929']}
         colorBy="index"
-        padding={0.7}
+        padding={0.8}
         defs={[
             {
                 id: 'dots',

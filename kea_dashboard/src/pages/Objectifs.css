@@ -38,11 +38,10 @@
 
 .obj-barChart {
     height: 300px;
-    width: 100%;
     background-color: #F7F9FB;
     border: 1px solid rgba(77, 77, 77, 0.3);
     border-radius: 8px;
-    width: 600px;
+    width: 800px;
 }
 
 .container-pgbar {
@@ -62,4 +61,15 @@
 .container-progress-bar h2 {
     color: black;
     font-size: 16px;
+}
+
+.container-mood {
+    display: flex;
+    background-color: #f7f9fb;
+    border: 1px solid rgba(77, 77, 77, 0.3);
+    border-radius: 8px;
+    margin-top: 8px;
+    width: 50%;
+    padding: 16px;
+    justify-content: center;
 }

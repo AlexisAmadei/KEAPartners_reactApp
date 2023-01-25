@@ -5,6 +5,7 @@ import BarChart from '../components/graph/BarChart';
 
 import data from '../data/barchart.json'
 import ObjGauge from '../assets/ObjGauge.svg';
+import Mood from '../assets/Mood.svg';
 import "./Objectifs.css";
 
 export default function Objectifs() {
@@ -33,6 +34,11 @@ export default function Objectifs() {
                                 labelColor="white"
                                 labelAlignment="center"
                             />
+                        </div>
+                    </div>
+                    <div className="container-mood">
+                        <div className="mood-face">
+                            <img src={Mood} alt="mood" />
                         </div>
                     </div>
                 </div>
