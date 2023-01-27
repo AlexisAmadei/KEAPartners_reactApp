@@ -5,7 +5,7 @@ import BarChart from '../components/graph/BarChart';
 
 import data from '../data/barchart.json'
 import ObjGauge from '../assets/ObjGauge.svg';
-import Mood from '../assets/Mood.svg';
+import Mood from '../assets/mood.svg';
 import Fidel from '../assets/Fidel.svg';
 import FootGraph from '../assets/FootGraph.svg';
 import "./Objectifs.css";
