@@ -1,7 +1,7 @@
 
 # FT2 Webschool Factory
 
-Projet de plusieurs semaine centré sur de la datavisualisation sous forme de dasboard.
+Projet de plusieurs semaines centré sur de la datavisualisation sous forme de dasboard.
 
 
 
